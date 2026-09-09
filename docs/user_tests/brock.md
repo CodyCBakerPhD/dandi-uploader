@@ -62,7 +62,7 @@ import numpy as np; np.save("reupload_test.npy", np.random.rand(1000**2 // 8))
 
 ## Extra notes
 
-Suggestion: add a parenthetical summary when filetree is minimized to illustrate which are selected vs. ignored 
+Suggestion: add a parenthetical summary when filetree is minimized to illustrate which are selected vs. ignored
 
 6 of 6 files 'for upload' (with extra parenthetical for 'X will not be uploaded')
 
