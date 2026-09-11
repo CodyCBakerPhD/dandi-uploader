@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.1
+
+#### 🏠 Internal
+
+- Upgraded Vitest to v5 (and `@vitest/coverage-v8` to match), keeping mocks uncleared between tests in the same suite the way the app's boot-once test setup relies on ([#89](https://github.com/brain-bbqs/bbqs-uploader/pull/89))
+
 ## 1.2.3
 
 #### 🐛 Bug Fix
