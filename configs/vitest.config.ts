@@ -14,6 +14,10 @@ export default defineConfig({
   test: {
     environment: "node",
     include: ["tests/unit/**/*.test.ts"],
+    // Vitest 5 clears mocks before each test by default. Several suites here boot the app once
+    // in `beforeAll` and assert on those recorded calls across multiple `it` blocks, so restore
+    // the pre-v5 behavior of leaving mocks alone between tests.
+    clearMocks: false,
     coverage: {
       provider: "v8",
       include: ["src/**/*.ts"],
